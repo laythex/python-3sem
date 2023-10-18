@@ -15,4 +15,5 @@ for i in range(5):
 
 axs[1][2].axis('off')
 
+plt.savefig('episode-1.png')
 plt.show()

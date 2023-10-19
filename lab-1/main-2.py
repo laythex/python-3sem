@@ -1,5 +1,5 @@
+import numpy as np
 import matplotlib.pyplot as plt
-import numpy
 from matplotlib.animation import FuncAnimation
 
 with open('2.dat') as file:
@@ -10,7 +10,7 @@ fig, ax = plt.subplots()
 ln, = ax.plot([], [])
 ax.set_xlim(0, 16)
 ax.set_ylim(-10, 12)
-ax.set_yticks(numpy.linspace(-10, 12, 12))
+ax.set_yticks(np.linspace(-10, 12, 12))
 ax.grid(True)
 
 

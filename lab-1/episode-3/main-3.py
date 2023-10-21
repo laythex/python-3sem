@@ -31,7 +31,7 @@ plt.show()
 fig, axs = plt.subplots(2, 3, figsize=(12, 8))
 
 for i in range(len(groups)):
-    cur_marks = [int(entry[2]) for entry in data if entry[0] == preps[i]]
+    cur_marks = [int(entry[2]) for entry in data if entry[1] == groups[i]]
     marks_per_group.append(sum(cur_marks) / len(cur_marks))
     cur_marks = [[cur_marks.count(mark), mark] for mark in marks]
 

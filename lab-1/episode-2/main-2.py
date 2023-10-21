@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 with open('2.dat') as file:
-    data = [list(map(float, entry[:-1].split())) for entry in file.readlines()]
+    data = [list(map(float, entry.split())) for entry in file.readlines()]
     n, x, y = int(len(data) / 2), data[::2], data[1::2]
 
 fig, ax = plt.subplots()

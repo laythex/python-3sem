@@ -1,7 +1,6 @@
 import os
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 
 students = pd.read_excel(os.path.join('students', 'students_info.xlsx'))
